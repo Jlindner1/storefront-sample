@@ -1,0 +1,701 @@
+
+/* ********************* initial setup ********************** */
+
+@media only screen and (min-width: 1280px) {
+   .container {
+       width: 80rem;
+       margin: 0 auto;
+   } 
+}
+
+html {
+     background-color: lightgray;
+     margin: 0 auto;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: normal;
+     font-size: 1rem;
+}
+
+.container {
+     background-color: #ffffff;
+}
+
+.secondarybutton {
+    background-color: #82785c;
+    border-color: #82785c;
+    border-radius: .3rem;
+    color: #ffffff;
+    padding: .7rem 1.5rem;
+    font-size: .875rem;
+    height: fit-content;
+}
+
+.checkoutbutton {
+    background-color: #3bb18f;
+    border-color: #3bb18f;
+    border-radius: .1rem;
+    color: #ffffff;
+    padding: .7rem 1.8rem;
+    font-size: .875rem;
+    height: fit-content;
+}
+
+.secondarybutton:hover {
+    cursor: pointer;
+    border-color: #424242;
+}
+
+.check {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    background-color: #ffffff;
+    border: .1rem #82785c solid;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.check > i {
+    color: #82785c;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+
+
+/* ********************* typography defaults ********************** */
+
+h1 {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.75rem;
+}
+
+.banner p{
+    width: 50%;
+    margin: auto 0;
+    text-align: center;
+    color: #dfdfdf;
+}
+
+p {
+    color: #90886f;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+h3 {
+
+}
+
+h4 {
+    color: #82785c;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h6 {
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-decoration: none;
+}
+
+label {
+    color: #000000;
+    height: fit-content;
+}
+
+
+/* ********************* header ********************** */
+
+header {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10% 0 28% 0;
+}
+
+.banner p {
+    width: 70%;
+}
+
+.secondarynav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5% 1% 5%;
+}
+
+.navoptions {
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navoptions a {
+    padding: .5rem 0;
+    font-weight: bold;
+}
+
+.navoptions a:hover {
+    border-top: .05rem #ffffff solid;
+    border-bottom: .05rem #ffffff solid;
+}
+
+.currentpageicon {
+    border-top: .05rem #ffffff solid;
+    border-bottom: .05rem #ffffff solid; 
+}
+
+nav {
+    background-color: #82785c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav > ul > li {
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+    transition: all .5s ease;
+}
+
+nav > ul > li > a {
+    padding: 0 0.5rem;
+}
+
+nav > ul > li:hover {
+    background-color: white;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+nav > ul > li:hover > a {
+    color: #90886f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+/* ********************* dropdown ********************** */
+
+.navbar ul .dropdown {
+    max-width: 71.9rem;
+    max-height: 22rem;
+    align-content: center;
+    visibility: hidden;
+    position: absolute;
+    background-color: #ffffff;
+    color: #254a7e;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: left;
+    margin: 1rem auto;
+    right: 5%;
+    left: 5%;
+    padding: 2rem 3rem;
+    opacity: 0%;
+    transition: all .5s ease;
+}
+
+.dropdown div {
+    height: fit-content;
+    width: fit-content;
+    max-width: 19%;
+    padding-bottom: 1rem;
+}
+
+.constantoption ul{
+    height: 10rem;
+}
+
+.navbar ul .dropdown a{
+    color: #254a7e;
+    font-size: 1rem;
+}
+
+.navbar ul .dropdown li:hover a{
+    text-decoration: underline;
+}
+
+.navbar ul li:hover .dropdown {
+    visibility: visible;
+    opacity: 100%;
+    transition: all .5s ease;
+}
+
+.navbar ul .dropdown h5{
+    margin: 0 0 .5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+/* ********************* selection filter ********************** */
+
+.filtermargin {
+    margin-bottom: 10%;
+}
+
+.filter {
+    background-color: #f5f6f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.filter .left {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.filter .left input {
+    margin-right: 1rem;
+    border: 2px #82785c solid;
+}
+
+.filter .left h3 {
+    margin-right: 2rem;
+}
+
+.filter .right {
+    margin-right: 10%;
+}
+
+
+/* ********************* shop items ********************** */
+
+.maincontent {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageselect {
+    margin-top: 3.125rem;
+    text-align: right;
+}
+
+.pageselect p {
+    width: 100%;
+}
+
+
+
+.page-arrows i {
+    color: #82785c;
+}
+
+.category img {
+    height: 100%;
+}
+
+.category .womenborder {
+    width: 91%;
+}
+
+.itemsrow {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: .5rem;
+    margin-bottom: 6.25rem;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 31%;
+    background-color: #f5f6f7;
+    align-items: center;
+}
+
+.item:hover {
+    border: .2rem #82785c solid;
+}
+
+.itemoptions {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin: .5rem .5rem 2rem .5rem;
+}
+
+.itemoptions a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.size {
+    margin-right: .5rem;
+}
+
+.itemoptions > a > i {
+    color: #82785c;
+}
+
+.colorrow {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+}
+
+.colorrow img {
+    margin-left: .25rem;
+}
+
+.itemimage {
+    width: 100%;
+}
+
+.itemimage img {
+    margin: 0 auto;
+}
+
+.iteminfo {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin: 2rem 1rem .5rem 1rem;
+}
+
+.iteminfo .price {
+    color: #424242;
+    font-weight: bolder;
+    font-size: 1.375;
+}
+
+
+/* ********************* About ********************** */
+
+.about {
+    background-color: #82785c;
+    margin-top: 10%;
+    padding: 4% 0;
+}
+
+.about fieldset {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+.about p {
+    color: #ffffff;
+    padding: 10%;
+    font-weight: normal;
+}
+
+.about h2 {
+    font-weight: normal;
+    padding: 0 1rem;
+}
+
+
+/* ********************* footer ********************** */
+
+.pagefooter {
+    background-color: #424242;
+    color: #ffffff;
+    padding: 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagefooter .left {
+    width: 30%;
+}
+
+.pagefooter .right p {
+    color: #ffffff;
+    text-align: right;
+}
+
+.pagefooter .right a {
+    border-right: .1rem #82785c solid;
+    margin-left: .1rem;
+    padding-right: .4rem;
+
+}
+
+.pagefooter .right a:last-of-type {
+    border-right: none;
+    padding-right: 0;
+}
+
+.pagefooter .right a:hover {
+    text-decoration: underline;
+}
+
+.pagefooter p {
+    color: #a1a1a1;;
+}
+
+.pagefooter a {
+    color: #a1a1a1;
+}
+
+
+/* ********************* Checkout ********************** */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: .1rem #dddddd solid;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.infocolumn > p {
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.login label {
+    width: 70%;
+}
+
+.login input:last-of-type{
+    margin-bottom: 0;
+}
+
+.coupon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coupon button {
+    margin-left: 80%;
+}
+
+
+
+.coupon input {
+    width: 100%;
+}
+
+form label {
+    width: 100%;
+}
+
+.halffield {
+    width: 45%;
+}
+
+.halffield input {
+    width: 100%;
+}
+
+.maxfield {
+    width: 100%;
+}
+
+.maxfield label {
+    width: 100%;
+}
+
+.maxfield input {
+    width: 100%;
+}
+
+form input {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login input {
+    width: 70%;
+}
+
+.createcheck {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.createcheck input {
+    margin: 0 1rem 0 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.coupon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.couponform {
+    width: 100%;
+}
+
+.infocolumn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 2rem 0;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.infocolumn h4 {
+    height: fit-content;
+    padding: 0 0 1rem;
+}
+
+.checkout {
+    height: fit-content;
+    width: 100%;
+    background-color: #dddad3;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    margin: 0 0 1rem;
+}
+
+.subrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: .1rem #dddddd solid;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 0.875rem;
+
+}
+
+.subrow h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subrowtotal {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subrowtotal p {
+    margin-left: 2rem;
+    color: #3bb18f;
+    font-weight: bold;
+}
+
+.paytype {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: .1rem #dddddd solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.paytype input {
+    margin: 0 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.paytype label {
+    width: fit-content;
+    color: #82785c;
+    font-weight: bold;
+}
+
+.paytype p {
+    padding: 0 0 0 3.5rem;
+    color: #000000;
+}
+
+.checkoutbutton {
+    margin: 1.5rem 0 3rem;
+}
+
+.primary-form {
+    font-weight: bold;
+    color: #82785c;
+}
+
+.secondary-form {
+    color: #999999;
+    font-weight: bold;
+}
